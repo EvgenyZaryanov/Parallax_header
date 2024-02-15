@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Protest Riot';
+  src: url('ProtestRiot-Regular.eot');
+  src: local('Protest Riot Regular'), local('ProtestRiot-Regular'),
+    url('ProtestRiot-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ProtestRiot-Regular.woff2') format('woff2'), url('ProtestRiot-Regular.woff') format('woff'),
+    url('ProtestRiot-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
