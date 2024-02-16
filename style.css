@@ -238,7 +238,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  background: rgb(84, 97, 113, 0.5);
+  background: rgb(84, 97, 113, 0.2);
   border-radius: 10px;
 }
 
