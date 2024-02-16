@@ -8,28 +8,39 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./vendor/font.css" />
   </head>
-  <body class="page">
+  <body class="main">
     <div class="scene">
-      <div data-speed="10" class="layer layer-bg"></div>
-      <div data-speed="30" class="layer layer-1"></div>
-      <div data-speed="90" class="layer layer-2"></div>
-      <div data-speed="120" class="layer layer-3"></div>
+      <div data-speed-x="10" data-speed-y="20" class="scene__layer scene__layer_bg"></div>
+      <div data-speed-x="30" data-speed-y="50" class="scene__layer scene__layer_1"></div>
+      <div data-speed-x="60" data-speed-y="80" class="scene__layer scene__layer_2"></div>
+      <div data-speed-x="90" data-speed-y="100" class="scene__layer scene__layer_3"></div>
     </div>
     <header class="header">
-      <h1 class="header-title">Welcome to</h1>
-      <div class="header-logoWrapper">
-        <span class="header-logo">Rock<br />view</span>
+      <h1 class="header__title">Welcome to</h1>
+      <div class="header__logoWrapper">
+        <span class="header__logo">High<br />Cliff</span>
       </div>
-      <h2 class="header-title">National Park</h2>
+      <h2 class="header__title header__title_part2">National Park</h2>
     </header>
     <nav class="nav-bar">
       <ul class="nav-menu">
-        <li class="menu-item">Home</li>
-        <li class="menu-item">About-Us</li>
-        <li class="menu-item">Gallery</li>
-        <li class="menu-item">Contacts</li>
+        <li class="nav-menu__item">Home</li>
+        <li class="nav-menu__item">About-Us</li>
+        <li class="nav-menu__item">Gallery</li>
+        <li class="nav-menu__item">Contacts</li>
       </ul>
     </nav>
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- <section class="about">
+      <div class="about__container">
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt id cum labore
+          quasi cumque consectetur similique ipsa fugiat, earum in sit enim veniam, quod neque
+          dignissimos? Consequatur, laboriosam in.
+        </p>
+        <img class="about__image" />
+      </div>
+    </section> -->
