@@ -8,8 +8,8 @@ function parallax(event) {
   }
 
   this.querySelectorAll('.scene__layer').forEach(layer => {
-    let speedX = layer.getAttribute('data-speed-x'); // Скорость по X
-    let speedY = layer.getAttribute('data-speed-y'); // Скорость по Y
+    let speedX = layer.getAttribute('data-speed-x');
+    let speedY = layer.getAttribute('data-speed-y');
     layer.style.transform = `translateX(${(mouseX * speedX) / 1200}px) translateY(${
       (mouseY * speedY) / 1200
     }px)`;
@@ -17,3 +17,19 @@ function parallax(event) {
 }
 document.addEventListener('mousemove', parallax);
 document.addEventListener('touchmove', parallax, { passive: true });
+
+let thresholdSets = [];
+for (let i = 0; i <= 1.0; i += 0.005) {
+  thresholdSets.push(i);
+}
+
+const callback = function (entries, observer) {
+  const scrollTopPercent = (window.clientYOffset / parallax.offsetHeight) * 100;
+  setParallaxItemsStyle(scrollTopPercent);
+};
+const observer = new interSectionObserver(callback, { threshold: thresholdSets });
+observer.observe(document.querySelector('content'));
+
+function setParallaxItemsStyle(scrollTopPercent) {
+  layer.style.transform = `transform: translate(0%, -${scrollTopPercent / 9}%);`;
+}
