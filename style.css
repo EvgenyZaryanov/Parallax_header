@@ -87,9 +87,10 @@ img {
     bottom: -2%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .scene__layer_tree {
     background-size: 380px 300px;
+    bottom: 0;
   }
 }
 .scene__layer_grass {
@@ -100,6 +101,12 @@ img {
 @media screen and (max-width: 768px) {
   .scene__layer_grass {
     background-size: 120% 120px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .scene__layer_grass {
+    background-size: 120% 80px;
+    bottom: 30%;
   }
 }
 
